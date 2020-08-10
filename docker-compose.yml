@@ -1,0 +1,26 @@
+version: '3'
+services:
+  devbox:
+    build:
+      context: ./dockerfile
+      dockerfile: DevBox.DockerFile
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./app:/var/www/html/avocadonc
+  devmysql:
+    build:
+      context: ./dockerfile
+      dockerfile: MySQLDev.DockerFile
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: ''
+      MYSQL_ALLOW_EMPTY_PASSWORD : 'yes'
+      MYSQL_USER: test1234
+      MYSQL_PASSWORD: test1234
+    restart: always
+    volumes:
+            #- container-volume:/var/lib/mysql
+            - ./db/avocadonc.sql:/docker-entrypoint-initdb.d/dump.sql        
