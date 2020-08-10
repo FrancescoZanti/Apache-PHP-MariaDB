@@ -23,4 +23,4 @@ services:
     restart: always
     volumes:
             #- container-volume:/var/lib/mysql
-            - ./db/avocadonc.sql:/docker-entrypoint-initdb.d/dump.sql        
+            - ./db/dump.sql:/docker-entrypoint-initdb.d/dump.sql        
