@@ -2,7 +2,7 @@ version: '3'
 services:
   devbox:
     build:
-      context: ./dockerfile
+      context: ./dockerfile-cont
       dockerfile: DevBox.DockerFile
     ports:
       - "80:80"
@@ -11,7 +11,7 @@ services:
       - ./app:/var/www/html/app
   devmysql:
     build:
-      context: ./dockerfile
+      context: ./dockerfile-cont
       dockerfile: MySQLDev.DockerFile
     ports:
       - "3306:3306"
