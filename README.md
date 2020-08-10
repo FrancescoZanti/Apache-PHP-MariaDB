@@ -6,8 +6,9 @@
 Scaricare la repo con GIT o effettuare il download dei file: inserire i file dell'applicazione web all'interno della cartella "app".
 Possibile inserire dump.sql all'interno della cartella "db" per importare tabelle MariaDB/MySQL da un'altra installazione.
 
-Gestire l'immagine con docker-composer.
+Gestire l'immagine con docker-composer -> docker-compose -f "docker-compose.yml" up -d --build
 
-# OS
+# OS (con Docker Desktop)
 
 Win10 2004
+MacOS Catalina
