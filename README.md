@@ -8,7 +8,10 @@ Possibile inserire dump.sql all'interno della cartella "db" per importare tabell
 
 Gestire l'immagine con docker-composer -> docker-compose -f "docker-compose.yml" up -d --build
 
+Attendere qualche istante (o minuto in base alle risorse a disposizione)
+
 # OS (con Docker Desktop)
 
 Win10 2004
 MacOS Catalina
+
