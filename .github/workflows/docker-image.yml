@@ -17,3 +17,5 @@ jobs:
     - name: Build the Docker image
       #run: docker build . --file docker-compose.yml --tag apache-php-mariadb:$(date +%s)
       run: docker-compose up -d
+    - name: Check image(s)
+      run: docker images -a
