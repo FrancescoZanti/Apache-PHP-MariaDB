@@ -1,5 +1,6 @@
 FROM ubuntu:latest
 MAINTAINER Francesco Zanti
+
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -y
 RUN apt-get install -y apache2 
