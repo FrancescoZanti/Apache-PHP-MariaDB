@@ -12,6 +12,7 @@ RUN apt-get install -y php-mbstring
 RUN apt-get install -y composer
 
 RUN apt install mariadb-server -y
+RUN service mysql status && service mysql start
 
 COPY ./app /var/www/html/app
 RUN sed -i -e 's/devmysql/127.0.0.1/g' /var/www/html/app/index.php
