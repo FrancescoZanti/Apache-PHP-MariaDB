@@ -31,4 +31,4 @@ MacOS Catalina
 | WIN10 2004     |      ✌️         |       N/A       |
 | MacOS Catalina |      ✌️         |       N/A       |
 | Debian 10      |   Not tested    |        ✌️       |
-| CentOS 8       |   Not tested    |        ✌️       |
+| CentOS 8       |   N/A   |        ✌️       |
