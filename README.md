@@ -22,9 +22,7 @@ Ecco comunque il link per l'immagine su Docker Hub [https://hub.docker.com/r/fra
 
 # OS (con Docker Desktop)
 
-Win10 2004;
 
-MacOS Catalina
 
 | OS             | Docker (Desktop)|     Podman      |  
 | -------------  | -------------   | -------------   |
